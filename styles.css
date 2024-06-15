@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50; /* Dark blue background */
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-top: 10px;
+    color: #333333; /* Dark label text */
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f5f5f5; /* Light gray input background */
+    color: #333333; /* Dark text color */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #16a085; /* Green button */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #1abc9c; /* Lighter shade of green on hover */
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px;
+    color: #333333; /* Dark message text */
+}
+
+#records {
+    margin-top: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    color: #333333; /* Dark text color */
+}
+
+.absent {
+    color: #e74c3c; /* Red for absentees */
+}
+
+.signature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    cursor: crosshair;
+}
+
+#clearBtn {
+    background-color: #f39c12; /* Orange button */
+    color: #ffffff; /* White text color */
+    margin-top: 10px;
+    width: 100%;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#clearBtn:hover {
+    background-color: #e67e22; /* Darker shade of orange on hover */
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}

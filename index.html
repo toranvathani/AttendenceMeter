@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Meter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Meter</h1>
+        <form id="attendanceForm">
+            <div>
+                <label>Presence:</label>
+                <input type="radio" id="presentRadio" name="presence" value="present" checked>
+                <label for="presentRadio">Present</label>
+                <input type="radio" id="absentRadio" name="presence" value="absent">
+                <label for="absentRadio">Absent</label>
+            </div>
+            <div id="nameDiv" style="display: none;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="idNumber">ID Number:</label>
+                <input type="text" id="idNumber" name="idNumber" required>
+            </div>
+            <div id="signatureDiv" style="display: none;">
+                <label for="signature">Signature:</label>
+                <canvas id="signature" width="300" height="100" style="border: 1px solid #000;"></canvas>
+                <button type="button" id="clearBtn">Clear Signature</button>
+            </div>
+            <button type="submit">Mark Attendance</button>
+        </form>
+        <div id="message"></div>
+        <h2>Attendance Records</h2>
+        <div id="records"></div>
+        <button id="downloadBtn">Download Records</button>
+    </div>
+    <!-- Include xlsx library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
